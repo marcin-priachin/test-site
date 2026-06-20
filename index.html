@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A clean one-page gallery website for Mediterranean-inspired artwork.">
+  <title>Mediterranean Light Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!--
+    Easy edits:
+    - Change the gallery name, section text, email, and image captions directly in this file.
+    - Replace images by putting new files in the images folder and updating the src="" paths below.
+    - Change colors and spacing in styles.css.
+  -->
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Mediterranean Light Gallery home">
+      <span class="logo-mark">ML</span>
+      <span>Mediterranean Light</span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="menu-toggle-line"></span>
+      <span class="menu-toggle-line"></span>
+      <span class="menu-toggle-line"></span>
+      <span class="sr-only">Open menu</span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#info">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img class="hero-image" src="images/bob-pejman-Terrace in Bellagio 1944X1472.jpg" alt="Lakeside terrace painting with flowers and mountains">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Fine art gallery</p>
+        <h1>Warm coastal scenes for quiet, elegant spaces.</h1>
+        <p class="hero-copy">Explore a curated collection of Mediterranean-inspired paintings filled with garden terraces, blue water, and sunlit architecture.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#gallery">View Gallery</a>
+          <a class="button button-secondary" href="#contact">Ask About a Piece</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-label">About</div>
+      <div class="section-text">
+        <h2>Collected scenes with a calm Mediterranean character.</h2>
+        <p>This first version is written as a simple gallery site for artwork, prints, or private commissions. The wording is intentionally easy to replace, so it can become a personal portfolio, small studio site, or art sales page without changing the structure.</p>
+        <p>The design keeps the artwork first: generous image space, clean typography, and a restrained layout that works well on phones, tablets, and desktop screens.</p>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading">
+        <div>
+          <div class="section-label">Gallery</div>
+          <h2>Featured Works</h2>
+        </div>
+        <p>Select any image to view it larger.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <button class="gallery-button" type="button" data-title="Terrace in Bellagio" data-image="images/bob-pejman-Terrace in Bellagio 1944X1472.jpg">
+            <img src="images/bob-pejman-Terrace in Bellagio 1944X1472.jpg" alt="Terrace in Bellagio painting">
+          </button>
+          <figcaption>Terrace in Bellagio</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <button class="gallery-button" type="button" data-title="Lake Como Villa" data-image="images/bob-pejman-Lake Como Villa.jpg">
+            <img src="images/bob-pejman-Lake Como Villa.jpg" alt="Lake Como villa painting">
+          </button>
+          <figcaption>Lake Como Villa</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <button class="gallery-button" type="button" data-title="Afternoon in Venice" data-image="images/bob-pejman-Afternoon in Venice 1944X1472.jpg">
+            <img src="images/bob-pejman-Afternoon in Venice 1944X1472.jpg" alt="Afternoon in Venice painting">
+          </button>
+          <figcaption>Afternoon in Venice</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <button class="gallery-button" type="button" data-title="Capri Terrace" data-image="images/bob-pejman-Capri Terrace 1944X1472.jpg">
+            <img src="images/bob-pejman-Capri Terrace 1944X1472.jpg" alt="Capri terrace painting">
+          </button>
+          <figcaption>Capri Terrace</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <button class="gallery-button" type="button" data-title="Bellagio Cafe" data-image="images/bob-pejman-Bellagio Cafe.jpg">
+            <img src="images/bob-pejman-Bellagio Cafe.jpg" alt="Bellagio cafe painting">
+          </button>
+          <figcaption>Bellagio Cafe</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <button class="gallery-button" type="button" data-title="Venetian Lights" data-image="images/bob-pejman-Venetian Lights.jpg">
+            <img src="images/bob-pejman-Venetian Lights.jpg" alt="Venetian lights painting">
+          </button>
+          <figcaption>Venetian Lights</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section info-section" id="info">
+      <div class="section-label">Services / Info</div>
+      <div class="info-grid">
+        <article class="info-item">
+          <h3>Artwork Sales</h3>
+          <p>Use this space for original works, limited edition prints, pricing notes, availability, or appointment details.</p>
+        </article>
+        <article class="info-item">
+          <h3>Private Consultations</h3>
+          <p>Add a short description for collectors, interior designers, or clients choosing pieces for a specific room.</p>
+        </article>
+        <article class="info-item">
+          <h3>Shipping Details</h3>
+          <p>Include delivery areas, framing options, packaging notes, or any policies customers should know before enquiring.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-content">
+        <p class="eyebrow">Contact</p>
+        <h2>Ask about availability, pricing, or a private viewing.</h2>
+        <p>Replace the email address below with your own. This keeps the site simple and does not require a backend.</p>
+        <a class="button button-primary" href="mailto:hello@example.com?subject=Gallery%20Enquiry">hello@example.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Mediterranean Light Gallery. All rights reserved.</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Artwork preview">
+    <button class="lightbox-close" type="button" aria-label="Close preview">&times;</button>
+    <img class="lightbox-image" src="" alt="">
+    <p class="lightbox-title"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
